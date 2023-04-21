@@ -1,0 +1,28 @@
+{
+  "name": "Grammar Ext",
+  "version": "0.0.0.1",
+  "manifest_version": 3,
+  "description": "Grammar Ext",
+  "permissions": [
+    "webRequest",
+    "tabs",
+    "storage",
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "jquery.js",
+        "highlightWithinTextarea.js",
+        "script.js"
+      ],
+      "css": [
+        "highlightWithinTextarea.css"
+      ]
+    }
+  ]
+}
+
