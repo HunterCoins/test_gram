@@ -167,6 +167,7 @@
         handleInput: function () {
             let input = this.$el.val();
             let ranges = this.getRanges(input, this.highlight);
+            console.log(ranges);
             let unstaggeredRanges = this.removeStaggeredRanges(ranges);
             let boundaries = this.getBoundaries(unstaggeredRanges);
             this.renderMarks(boundaries);

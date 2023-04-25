@@ -51,6 +51,11 @@
     /*overflow-y: auto !important;*/
 }
 
+.hwt-input-chg {
+    position: absolute !important;
+    display: inline-block !important;
+}
+
 .hwt-content {
     /*border: 1px solid;*/
     background: none transparent !important;
@@ -76,6 +81,6 @@
 }
 
 .hwt-highlights mark {
-  background-color: transparent !important;
-  background: transparent !important;
+    background-color: transparent !important;
+    background: transparent !important;
 }
