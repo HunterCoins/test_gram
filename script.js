@@ -61,6 +61,11 @@ function changeStyleMistake(e) {
         return 100 - widthWithScroll;
     }
 
+    $(_this)
+        .siblings(".hwt-backdrop")
+        .children(".hwt-highlights")
+        .css("text-align", $(_this).css("text-align") || "start");
+
     if ($(_this).siblings(".hwt-backdrop").width() >= $(window).width()) {
         $(_this).addClass("hwt-input-chg");
     }
